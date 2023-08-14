@@ -8,6 +8,9 @@ import CIcon from '@coreui/icons-vue'
 import { iconsSet as icons } from '@/assets/icons'
 import DocsExample from '@/components/DocsExample'
 
+import BaseContainer from '@/components/BaseContainer.vue'
+import BaseButton from '@/components/BaseButton.vue'
+
 const app = createApp(App)
 app.use(store)
 app.use(router)
@@ -15,5 +18,6 @@ app.use(CoreuiVue)
 app.provide('icons', icons)
 app.component('CIcon', CIcon)
 app.component('DocsExample', DocsExample)
-
+app.component('base-container', BaseContainer)
+app.component('base-button', BaseButton)
 app.mount('#app')

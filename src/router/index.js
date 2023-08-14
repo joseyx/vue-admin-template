@@ -5,6 +5,16 @@ import DefaultLayout from '@/layouts/DefaultLayout'
 
 const routes = [
   {
+    path: '/login',
+    name: 'Login',
+    component: () => import('@/views/pages/Login'),
+  },
+  {
+    path: '/front',
+    name: 'Front',
+    component: () => import('@/views/HomeView.vue'),
+  },
+  {
     path: '/',
     name: 'Home',
     component: DefaultLayout,
